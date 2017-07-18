@@ -15,7 +15,7 @@ application:
   date_format: MMM Do YYYY
 modules:
   enterprise:
-    enabled: false
+    enabled: true
   editor:
     enabled: true
   user_admin:

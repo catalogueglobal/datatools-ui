@@ -37,6 +37,7 @@
     "leaflet": "1.0.3",
     "lodash.clonedeep": "^4.5.0",
     "lodash.omit": "^4.5.0",
+    "lodash.pick": "^4.4.0",
     "lodash.throttle": "^4.1.1",
     "lodash.tolower": "^4.1.2",
     "lodash.upperfirst": "^4.3.1",
