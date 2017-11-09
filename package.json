@@ -4,7 +4,7 @@
   "description": "Core application for the Conveyal transit data tools suite",
   "repository": {
     "type": "git",
-    "url": "https://github.com/conveyal/datatools-ui.git"
+    "url": "https://github.com/catalogueglobal/datatools-ui.git"
   },
   "author": "Conveyal LLC",
   "license": "MIT",
