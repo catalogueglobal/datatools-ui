@@ -146,10 +146,10 @@ async function makeGraphQLRequests (feedVersionId) {
       method,
       body: JSON.stringify({
         query: GRAPHQL_STOPS_QUERY,
-        variables: JSON.stringify({namespace})
+        variables: {namespace}
       })
     })
-    .then(res => res.json())
+    .then(res => res.json().data)
     // .then(json => {
     //   // console.log(`graphql response: ${JSON.stringify(json)}`)
     //
