@@ -1,0 +1,67 @@
+{
+  "trip": {
+    "language": "en-US",
+    "summary": {
+      "max_lon": -77.923058,
+      "max_lat": 42.097988,
+      "time": 12,
+      "length": 0.209,
+      "min_lat": 42.096169,
+      "min_lon": -77.923637
+    },
+    "locations": [{
+        "lon": -77.923058,
+        "lat": 42.096169,
+        "type": "break"
+      },
+      {
+        "side_of_street": "right",
+        "lon": -77.922623,
+        "lat": 42.098282,
+        "type": "break"
+      }
+    ],
+    "units": "kilometers",
+    "legs": [{
+      "shape": "oajhoAbn`ssCqRzAu^rFuUbFs_@xMeFxB",
+      "summary": {
+        "max_lon": -77.923058,
+        "max_lat": 42.097988,
+        "time": 12,
+        "length": 0.209,
+        "min_lat": 42.096169,
+        "min_lon": -77.923637
+      },
+      "maneuvers": [{
+          "travel_mode": "drive",
+          "begin_shape_index": 0,
+          "length": 0.209,
+          "time": 12,
+          "type": 1,
+          "end_shape_index": 5,
+          "instruction": "Drive north on Stannards Road/NY 19.",
+          "verbal_pre_transition_instruction": "Drive north on Stannards Road, New York 19 for 200 meters.",
+          "travel_type": "bus",
+          "street_names": [
+            "Stannards Road",
+            "NY 19"
+          ]
+        },
+        {
+          "travel_type": "bus",
+          "travel_mode": "drive",
+          "begin_shape_index": 5,
+          "time": 0,
+          "type": 5,
+          "end_shape_index": 5,
+          "instruction": "Your destination is on the right.",
+          "length": 0,
+          "verbal_transition_alert_instruction": "Your destination will be on the right.",
+          "verbal_pre_transition_instruction": "Your destination is on the right."
+        }
+      ]
+    }],
+    "status_message": "Found route between points",
+    "status": 0
+  }
+}

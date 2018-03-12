@@ -11,8 +11,10 @@
   "scripts": {
     "build": "mastarm build --env production",
     "cover-client": "npm run test-client -- --coverage --coverage-paths \"lib/**/*.js\"",
-    "deploy": "mastarm build --minify --env production && aws s3 cp --recursive --acl public-read dist",
+    "cover-flow": "flow-coverage-report -t html -t text -i 'lib/**/*.js' -o coverage-flow",
+    "deploy": "mastarm deploy --minify --env production",
     "lint": "mastarm lint \"lib/**/*.js\"",
+    "predeploy": "yarn",
     "prestart": "yarn",
     "start": "mastarm build --serve --proxy http://localhost:4000/api",
     "test": "npm run lint && npm run test-client",
@@ -22,6 +24,7 @@
   "dependencies": {
     "@conveyal/lonlat": "^1.1.2",
     "@conveyal/woonerf": "^2.4.1",
+    "@turf/line-slice-along": "^4.6.0",
     "auth0-js": "^8.8.0",
     "auth0-lock": "^10.18.0",
     "babel-polyfill": "^6.22.0",
@@ -39,6 +42,7 @@
     "lodash.omit": "^4.5.0",
     "lodash.throttle": "^4.1.1",
     "lodash.tolower": "^4.1.2",
+    "lodash.uniqueid": "^4.0.1",
     "lodash.upperfirst": "^4.3.1",
     "moment": "^2.11.2",
     "numeral": "2.0.4",
@@ -88,6 +92,10 @@
     "validator": "7.0.0"
   },
   "devDependencies": {
+    "flow-bin": "^0.53.1",
+    "flow-coverage-report": "^0.3.0",
+    "mastarm": "^3.11.0",
+    "nock": "^9.0.14",
     "jsonwebtoken": "^7.4.1",
     "mastarm": "^3.11.0",
     "semantic-release": "^6.3.2"

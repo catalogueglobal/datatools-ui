@@ -1,0 +1,83 @@
+{
+  "trip": {
+    "language": "en-US",
+    "summary": {
+      "max_lon": -77.921837,
+      "max_lat": 42.089252,
+      "time": 72,
+      "length": 0.616,
+      "min_lat": 42.086498,
+      "min_lon": -77.925529
+    },
+    "locations": [{
+        "side_of_street": "right",
+        "lon": -77.925529,
+        "lat": 42.086658,
+        "type": "break"
+      },
+      {
+        "lon": -77.922157,
+        "lat": 42.089252,
+        "type": "break"
+      }
+    ],
+    "units": "kilometers",
+    "legs": [{
+      "shape": "grwgoArhessCFm~@Na\\OmUNuONuEr@sFjFcP^iCTuEd@wb@]_TuZzAwXzAs~@bFs[hC}Nl@qHl@",
+      "summary": {
+        "max_lon": -77.921837,
+        "max_lat": 42.089252,
+        "time": 72,
+        "length": 0.616,
+        "min_lat": 42.086498,
+        "min_lon": -77.925529
+      },
+      "maneuvers": [{
+          "travel_mode": "drive",
+          "begin_shape_index": 0,
+          "length": 0.31,
+          "time": 38,
+          "type": 2,
+          "end_shape_index": 11,
+          "instruction": "Drive east on Moonlight Drive.",
+          "verbal_pre_transition_instruction": "Drive east on Moonlight Drive for 300 meters.",
+          "travel_type": "bus",
+          "street_names": [
+            "Moonlight Drive"
+          ]
+        },
+        {
+          "travel_type": "bus",
+          "travel_mode": "drive",
+          "verbal_pre_transition_instruction": "Turn left onto Stannards Road, New York 19.",
+          "verbal_transition_alert_instruction": "Turn left onto Stannards Road.",
+          "length": 0.306,
+          "instruction": "Turn left onto Stannards Road/NY 19.",
+          "end_shape_index": 17,
+          "type": 15,
+          "time": 34,
+          "verbal_post_transition_instruction": "Continue for 300 meters.",
+          "street_names": [
+            "Stannards Road",
+            "NY 19"
+          ],
+          "begin_shape_index": 11
+        },
+        {
+          "travel_type": "bus",
+          "travel_mode": "drive",
+          "begin_shape_index": 17,
+          "time": 0,
+          "type": 4,
+          "end_shape_index": 17,
+          "instruction": "You have arrived at your destination.",
+          "length": 0,
+          "verbal_transition_alert_instruction": "You will arrive at your destination.",
+          "verbal_pre_transition_instruction": "You have arrived at your destination."
+        }
+      ]
+    }],
+    "status_message": "Found route between points",
+    "status": 0
+  }
+}

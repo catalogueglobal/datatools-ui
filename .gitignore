@@ -2,7 +2,7 @@ node_modules/
 .DS_Store
 dist
 *.log
-coverage
+coverage*
 target/
 src/main/client/config.js
 datatools-manager.iml
