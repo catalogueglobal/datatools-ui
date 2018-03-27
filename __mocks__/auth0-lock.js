@@ -2,7 +2,7 @@ export default function Auth0Lock (clientID, domain, options) {
   this.options = options
 }
 
-Auth0Lock.prototype.getProfile = function (token, callback) {
+Auth0Lock.prototype.getUserInfo = function (token, callback) {
   if (this.options.getProfileSuccess) {
     callback(null, this.options.getProfileResult)
   } else {

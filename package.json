@@ -2,6 +2,9 @@
   "name": "datatools-manager",
   "version": "0.0.0-development",
   "description": "Core application for the Conveyal transit data tools suite",
+  "jest": {
+    "testURL": "http://localhost:9966"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/conveyal/datatools-ui.git"
