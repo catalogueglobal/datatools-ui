@@ -23,6 +23,12 @@ module.exports = {
       callback
     ) {
       return callback(null, {
+        accessToken: jwt.sign(
+          {
+            nonce
+          },
+          'signingKey'
+        ),
         idToken: jwt.sign(
           {
             nonce
