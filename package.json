@@ -17,7 +17,7 @@
     "predeploy": "yarn",
     "prestart": "yarn",
     "start": "mastarm build --env dev --serve --proxy http://localhost:4000/api",
-    "test": "npm run lint && npm run test-client",
+    "test": "npm run lint && yarn run flow && npm run test-client",
     "test-client": "mastarm test -c configurations/test",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },

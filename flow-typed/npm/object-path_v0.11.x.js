@@ -3,6 +3,7 @@
 
 declare module 'object-path' {
   declare module.exports: {
-    get(obj: ?Object, string | Array<string>): ?any
+    get(obj: ?Object | Array<any>, string | Array<string>): ?any,
+    set(obj: ?Object | Array<any>, string, any): ?any
   }
 }

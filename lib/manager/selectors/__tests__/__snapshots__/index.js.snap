@@ -1,0 +1,362 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`manager > selectors > getActiveProject should get the project 1`] = `
+Object {
+  "id": "1",
+}
+`;
+
+exports[`manager > selectors > getFilteredStops should output blank array when no pattern data exists 1`] = `Array []`;
+
+exports[`manager > selectors > getFilteredStops should output data when pattern data exists 1`] = `
+Array [
+  Object {
+    "location_type": null,
+    "stop_code": "60020",
+    "stop_desc": null,
+    "stop_id": "20",
+    "stop_lat": 37.355056803,
+    "stop_lon": -121.945134661,
+    "stop_name": "EL CAMINO & LAFAYETTE",
+    "stop_url": null,
+    "wheelchair_boarding": null,
+    "zone_id": "1",
+  },
+  Object {
+    "location_type": null,
+    "stop_code": "65228",
+    "stop_desc": null,
+    "stop_id": "5228",
+    "stop_lat": 37.35339598,
+    "stop_lon": -121.937117102,
+    "stop_name": "SANTA CLARA CALTRAIN STATION",
+    "stop_url": null,
+    "wheelchair_boarding": null,
+    "zone_id": "1",
+  },
+]
+`;
+
+exports[`manager > selectors > getPatternData should output blank array when no pattern data exists 1`] = `Array []`;
+
+exports[`manager > selectors > getPatternData should output data when pattern data exists 1`] = `
+Array [
+  Object {
+    "numStops": 2,
+    "numTrips": 2,
+    "patternId": "248",
+    "patternName": "10 stops from 1ST & METRO @ LR STATION to SANTA CLARA CALTRAIN STATION (133 trips)",
+    "tripsPerHour": Array [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+    ],
+  },
+]
+`;
+
+exports[`manager > selectors > getRouteDetailsData should output blank array when no route data exists 1`] = `Array []`;
+
+exports[`manager > selectors > getRouteDetailsData should output data when route data exists 1`] = `
+Array [
+  Object {
+    "numPatterns": 1,
+    "numStops": 2,
+    "numTrips": 1,
+    "routeId": "10",
+    "routeName": "10 - SANTA CLARA TRANSIT- METRO AIRPORT",
+    "tripsPerHour": Array [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+    ],
+  },
+]
+`;
+
+exports[`manager > selectors > getTimetableData should get the data when data is available 1`] = `
+Object {
+  "columns": Array [
+    Object {
+      "dataField": "tripId",
+      "isKey": true,
+      "name": "Trip ID",
+      "row": "0",
+      "rowSpan": "1",
+      "width": "150",
+    },
+    Object {
+      "dataField": "tripHeadsign",
+      "name": "Trip Headsign",
+      "row": "0",
+      "rowSpan": "1",
+      "width": "150",
+    },
+    Object {
+      "dataField": "tripShortName",
+      "name": "Trip Short Name",
+      "row": "0",
+      "rowSpan": "1",
+      "width": "150",
+    },
+    Object {
+      "colSpan": "1",
+      "dataField": "stop-14-departure",
+      "name": "1ST & METRO @ LR STATION",
+      "row": "0",
+      "width": "200",
+    },
+    Object {
+      "colSpan": "1",
+      "dataField": "stop-15-departure",
+      "name": "TECHNOLOGY & METRO",
+      "row": "0",
+      "width": "200",
+    },
+  ],
+  "rows": Array [
+    Object {
+      "stop-14-arrival": "06:33:00",
+      "stop-14-arrival-raw": 23580,
+      "stop-14-departure": "06:33:00",
+      "stop-14-departure-raw": 23580,
+      "stop-15-arrival": "",
+      "stop-15-arrival-raw": null,
+      "stop-15-departure": "",
+      "stop-15-departure-raw": null,
+      "tripHeadsign": "10 SANTA CLARA CALTRAIN VIA AIRPORT",
+      "tripId": "2369269",
+      "tripShortName": null,
+    },
+    Object {
+      "stop-14-arrival": "08:03:00",
+      "stop-14-arrival-raw": 28980,
+      "stop-14-departure": "08:03:00",
+      "stop-14-departure-raw": 28980,
+      "stop-15-arrival": "",
+      "stop-15-arrival-raw": null,
+      "stop-15-departure": "",
+      "stop-15-departure-raw": null,
+      "tripHeadsign": "10 SANTA CLARA CALTRAIN VIA AIRPORT",
+      "tripId": "2369292",
+      "tripShortName": null,
+    },
+  ],
+}
+`;
+
+exports[`manager > selectors > getTimetableData should get the data when data is available and show arrivals filter is set 1`] = `
+Object {
+  "columns": Array [
+    Object {
+      "dataField": "tripId",
+      "isKey": true,
+      "name": "Trip ID",
+      "row": "0",
+      "rowSpan": "2",
+      "width": "150",
+    },
+    Object {
+      "dataField": "tripHeadsign",
+      "name": "Trip Headsign",
+      "row": "0",
+      "rowSpan": "2",
+      "width": "150",
+    },
+    Object {
+      "dataField": "tripShortName",
+      "name": "Trip Short Name",
+      "row": "0",
+      "rowSpan": "2",
+      "width": "150",
+    },
+    Object {
+      "colSpan": "2",
+      "dataField": undefined,
+      "name": "1ST & METRO @ LR STATION",
+      "row": "0",
+      "width": "200",
+    },
+    Object {
+      "dataField": "stop-14-arrival",
+      "name": "Arrive",
+      "row": "1",
+      "width": "100",
+    },
+    Object {
+      "dataField": "stop-14-departure",
+      "name": "Depart",
+      "row": "1",
+      "width": "100",
+    },
+    Object {
+      "colSpan": "2",
+      "dataField": undefined,
+      "name": "TECHNOLOGY & METRO",
+      "row": "0",
+      "width": "200",
+    },
+    Object {
+      "dataField": "stop-15-arrival",
+      "name": "Arrive",
+      "row": "1",
+      "width": "100",
+    },
+    Object {
+      "dataField": "stop-15-departure",
+      "name": "Depart",
+      "row": "1",
+      "width": "100",
+    },
+  ],
+  "rows": Array [
+    Object {
+      "stop-14-arrival": "06:33:00",
+      "stop-14-arrival-raw": 23580,
+      "stop-14-departure": "06:33:00",
+      "stop-14-departure-raw": 23580,
+      "stop-15-arrival": "",
+      "stop-15-arrival-raw": null,
+      "stop-15-departure": "",
+      "stop-15-departure-raw": null,
+      "tripHeadsign": "10 SANTA CLARA CALTRAIN VIA AIRPORT",
+      "tripId": "2369269",
+      "tripShortName": null,
+    },
+    Object {
+      "stop-14-arrival": "08:03:00",
+      "stop-14-arrival-raw": 28980,
+      "stop-14-departure": "08:03:00",
+      "stop-14-departure-raw": 28980,
+      "stop-15-arrival": "",
+      "stop-15-arrival-raw": null,
+      "stop-15-departure": "",
+      "stop-15-departure-raw": null,
+      "tripHeadsign": "10 SANTA CLARA CALTRAIN VIA AIRPORT",
+      "tripId": "2369292",
+      "tripShortName": null,
+    },
+  ],
+}
+`;
+
+exports[`manager > selectors > getTimetableData should get the data when data is available and timepoint filter is set 1`] = `
+Object {
+  "columns": Array [
+    Object {
+      "dataField": "tripId",
+      "isKey": true,
+      "name": "Trip ID",
+      "row": "0",
+      "rowSpan": "1",
+      "width": "150",
+    },
+    Object {
+      "dataField": "tripHeadsign",
+      "name": "Trip Headsign",
+      "row": "0",
+      "rowSpan": "1",
+      "width": "150",
+    },
+    Object {
+      "dataField": "tripShortName",
+      "name": "Trip Short Name",
+      "row": "0",
+      "rowSpan": "1",
+      "width": "150",
+    },
+    Object {
+      "colSpan": "1",
+      "dataField": "stop-14-departure",
+      "name": "1ST & METRO @ LR STATION",
+      "row": "0",
+      "width": "200",
+    },
+  ],
+  "rows": Array [
+    Object {
+      "stop-14-arrival": "06:33:00",
+      "stop-14-arrival-raw": 23580,
+      "stop-14-departure": "06:33:00",
+      "stop-14-departure-raw": 23580,
+      "stop-15-arrival": "",
+      "stop-15-arrival-raw": null,
+      "stop-15-departure": "",
+      "stop-15-departure-raw": null,
+      "tripHeadsign": "10 SANTA CLARA CALTRAIN VIA AIRPORT",
+      "tripId": "2369269",
+      "tripShortName": null,
+    },
+    Object {
+      "stop-14-arrival": "08:03:00",
+      "stop-14-arrival-raw": 28980,
+      "stop-14-departure": "08:03:00",
+      "stop-14-departure-raw": 28980,
+      "stop-15-arrival": "",
+      "stop-15-arrival-raw": null,
+      "stop-15-departure": "",
+      "stop-15-departure-raw": null,
+      "tripHeadsign": "10 SANTA CLARA CALTRAIN VIA AIRPORT",
+      "tripId": "2369292",
+      "tripShortName": null,
+    },
+  ],
+}
+`;
+
+exports[`manager > selectors > getTimetableData should get the data when no data is fetched 1`] = `
+Object {
+  "columns": Array [],
+  "rows": Array [],
+}
+`;

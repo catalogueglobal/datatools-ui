@@ -44,6 +44,23 @@ body {
     outline: none;
 }
 
+/* Route List */
+.route-list .list-group-item:first-child {
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+  border: 1px solid #ddd !important;
+}
+
+.route-list .list-group-item {
+  border: 1px solid #ddd !important;
+}
+
+.route-list .list-group-item:last-child {
+  border-bottom-right-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+  border: 1px solid #ddd !important;
+}
+
 /* EDITOR ENTITY DETAILS */
 
 .entity-details {
