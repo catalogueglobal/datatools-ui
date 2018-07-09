@@ -8,6 +8,7 @@ src/main/client/config.js
 datatools-manager.iml
 config.yml
 config_server.yml
+
 tmp/
 
 # Optional npm cache directory

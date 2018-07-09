@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`common > user > Auth0Manager > should login with lock 1`] = `
+Array [
+  Array [
+    Object {
+      "profile": Object {
+        "app_metadata": Object {
+          "datatools": Array [],
+        },
+      },
+      "token": "fake-token",
+    },
+  ],
+]
+`;

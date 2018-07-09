@@ -2,6 +2,9 @@
   "name": "datatools-manager",
   "version": "0.0.0-development",
   "description": "Core application for the Conveyal transit data tools suite",
+  "jest": {
+    "testURL": "http://localhost:9966"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/conveyal/datatools-ui.git"
@@ -23,9 +26,10 @@
   },
   "dependencies": {
     "@conveyal/lonlat": "^1.1.2",
-    "@conveyal/woonerf": "^2.2.1",
+    "@conveyal/woonerf": "^2.4.1",
     "@turf/line-slice-along": "^4.6.0",
-    "auth0-lock": "9",
+    "auth0-js": "^8.8.0",
+    "auth0-lock": "^10.18.0",
     "babel-polyfill": "^6.22.0",
     "bootstrap": "^3.3.7",
     "dom-helpers": "3.2.1",
@@ -66,12 +70,14 @@
     "react-redux": "^5.0.3",
     "react-router": "^3.0.0-alpha.1",
     "react-router-bootstrap": "0.23.1",
+    "react-router-redux": "^4.0.8",
     "react-select": "^1.0.0-beta14",
     "react-toggle": "^3.0.0",
     "react-virtualized": "^9.2.2",
     "react-virtualized-select": "^2.1.0",
     "reduce-reducers": "^0.1.2",
     "redux": "^3.3.1",
+    "redux-actions": "^2.2.1",
     "redux-merge-reducers": "^0.0.2",
     "reselect": "^3.0.0",
     "shpjs": "^3.3.2",
@@ -85,6 +91,7 @@
     "turf-linestring": "^1.0.2",
     "turf-point": "^2.0.1",
     "turf-point-on-line": "^3.0.11",
+    "uuid": "^3.1.0",
     "validator": "7.0.0"
   },
   "devDependencies": {
@@ -92,6 +99,8 @@
     "flow-coverage-report": "^0.3.0",
     "mastarm": "^3.11.0",
     "nock": "^9.0.14",
+    "jsonwebtoken": "^7.4.1",
+    "mastarm": "^3.11.0",
     "semantic-release": "^6.3.2"
   },
   "standard": {

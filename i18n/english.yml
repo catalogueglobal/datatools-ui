@@ -153,6 +153,8 @@ components:
     title: Validation Results
   LanguageSelect:
     placeholder: Select language...
+  Login:
+    title: Log in
   NotesViewer:
     all: All Comments
     feedSource: Feed Source

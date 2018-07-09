@@ -146,6 +146,8 @@ components:
     tripIssues: Trip Issues
   LanguageSelect:
     placeholder: Select language...
+  Login:
+    title: Log in
   NotesViewer:
     all: All Comments
     feedSource: Feed Source
